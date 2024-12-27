@@ -1,13 +1,11 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;    
     height: auto;
     padding: 0px 0px 64px 0px;
     gap: 36px; 
     opacity: 1; 
     margin: 0;
-    background-color: #FFFDF3; 
+    background-color: #F1F1F1; 
     font-family: 'Poppins', 'DM Sans';
     overflow: visible; 
 }
@@ -102,7 +100,7 @@ label {
 
 .required {
     color: #D32E1F;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -129,25 +127,39 @@ input {
 
 .phone-input {
     display: flex;
-    align-items: center;
     width: 100%;
 }
 
-.phone-input img.logo-bendera {
-    width: 20px; 
-    height: 20px;
-    margin-right: 4px; 
-}
 
-.phone-input select {
-    width: 100px;
-    height: 46px;
+.phone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 44px;
     border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
+    border-radius: 6px 0px 0px 6px;
     background-color: #f9f9f9;
     outline: none;
     font-size: 14px;
-    text-align: right;
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.phone-image img{
+    width: 30px;
+    height: 20px;
+}
+
+.phone-input select {
+    width: 70px;
+    height: 46px;
+    border: 1px solid #F1F1F1;
+    border-radius: 0px 6px 6px 0px;
+    outline: none;
+    font-size: 14px;
+    text-align: center;
 }
 
 .phone-input input {
