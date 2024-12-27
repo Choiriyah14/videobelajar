@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videobelajar</title>
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+
+    <!-- mdi-eye -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="logo-videobelajar.png" alt="Logo videobelajar" class="logo-videobelajar">
+    </div>
+     
+    <!-- Login Form Section -->
+    <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+    
+    <div class="login">
+
+    <!-- Title -->
+    <h3>Masuk ke Akun</h3>
+    <p>Yuk, lanjutin belajarmu di videobelajar.</p>
+
+    <!-- Login Form -->
+    <form>
+        <!-- Email Input -->
+        <label for="chk" aria-hidden="true">E-Mail<span class="required"> * </span></label>
+        <input type="email" id="email" name="email" placeholder="" required="">
+
+        <!-- Password Input -->
+        <label for="chk" aria-hidden="true">Kata Sandi<span class="required"> * </span></label>
+        <input type="password" id="pwd" name="katasandi" placeholder="" required="">
+        <i class="mdi mdi-eye-off" id="toggle-password"></i>
+
+        <!-- Forgot Password -->
+        <a href="" class="forgot-password">Lupa Password?</a>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Masuk</button>
+        <button type="button" class="btn btn-secondary">Daftar</button>
+        
+        <!-- Separator -->
+        <div class="separator">atau</div>
+
+        <!-- Google Login Button -->
+        <button type="button" class="google-btn">
+            <img src="google-logo.png" alt="google logo" class="google-logo">
+            
+            <span>Masuk dengan Google</span>
+
+
+        </button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,346 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+    height: auto;
+    padding: 0px 0px 64px 0px;
+    gap: 36px; 
+    opacity: 1; 
+    margin: 0;
+    background-color: #FFFDF3; 
+    font-family: 'Poppins', 'DM Sans';
+    overflow: visible; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px; 
+    background-color: white; 
+    border-bottom: 1px solid #E0E0E0; 
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.logo-videobelajar {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 980px;
+    padding: 36px 0px 0px 0px;
+    gap: 36px;
+    background: white;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #F1F1F1;
+    opacity: 1; 
+}
+
+#chk{
+    display: none;
+}
+
+.register {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    font-family: 'poppins';
+    font-weight: 600px;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: #222325;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-style: medium;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #333333AD;;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+label {
+    color: #4A505C;
+    font-size: 16px;
+    justify-content: left;
+    display: block;
+    margin: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-style: medium;
+    font-family: 'DM Sans';
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+    font-weight: 400;
+    transition: .5s ease-in-out;
+}
+
+.required {
+    color: #D32E1F;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+input {
+    display: inline-block;
+    width: 554px;
+    height: 48px;
+    gap: 0px;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: 1px 0px 0px 0px;
+    border-radius: 6px;
+    opacity: 0px;
+    border: 1px solid #F1F1F1;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.phone-input img.logo-bendera {
+    width: 20px; 
+    height: 20px;
+    margin-right: 4px; 
+}
+
+.phone-input select {
+    width: 100px;
+    height: 46px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    background-color: #f9f9f9;
+    outline: none;
+    font-size: 14px;
+    text-align: right;
+}
+
+.phone-input input {
+    display: inline-block;
+    width: 428px;
+    height: 48px;
+    gap: 0px;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: 1px 0px 0px 0px;
+    border-radius: 6px;
+    opacity: 0px;
+    border: 1px solid #F1F1F1;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 575px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+}
+
+.password-container input {
+    flex: 1;
+    height: 48px;
+    padding-right: 40px; 
+    border: 1px solid #F1F1F1;
+    border-radius: 6px;
+}
+
+.password-container i {
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.password-container i:hover {
+    color: #333;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color:#4A505C;
+    font-family: 'DM Sans';
+    font-style: medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    margin: 10px 20px 10px 20px;
+    transition: .2s ease in;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    width: 550px;
+    height: 42px;
+    padding: 10px;
+    margin : 6px 0;
+    margin-left: 25px;
+    border: none;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    cursor: pointer;
+    top: 10px;
+}
+
+.btn-primary {   
+    background-color:#3ECF4C;
+    color: #ffffff;
+    padding-top: 5px;
+    font-family: 'DM Sans';
+    font-style: medium;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.btn-primary:hover {
+    background-color: #3ECF4C;
+}
+
+.btn-secondary {
+    background: #E2FCD9CC;
+    color:#3ECF4C;
+    padding-top: 5px;
+    font-style: medium;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.btn-secondary:hover {
+    background-color: #E2FCD9CC;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-style: medium;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
+    color: #4A505C;
+
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #ccc;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: 5px;
+    margin-right: 30px;
+    margin-top: 5px;
+  }
+  
+  .separator span {
+    color: #555;
+    font-size: 14px;
+  }
+
+
+.google-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 520px;
+    height: 42px;
+    gap: 8px; 
+    padding: 10px 15px; 
+    background-color: #ffff; 
+    color: #4A505C;
+    cursor: pointer;
+    font-style: body medium;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-radius: 10px;
+    border: 1px solid #F1F1F1;
+    opacity: 0px; 
+}
+
+.google-logo {
+    width: 30px;
+    height: 20px; 
+    height: auto; 
+}
+
+.google-btn:hover {
+    background-color:#f0f0f0;
+}
