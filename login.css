@@ -285,3 +285,72 @@ button{
 .google-btn:hover {
     background-color: #f0f0f0;
 }
+
+/* Media Query untuk Tampilan Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; /* Center logo di navbar */
+        padding: 30px 50px; /* Kurangi padding */
+        box-shadow: 0px 0px 1px 0px #3E434A4F;
+        box-shadow: 4px 8px 12px 0px #3E434A26;
+        
+    }
+
+    .logo-videobelajar {
+        height: 40px; /* Sesuaikan ukuran logo */
+    }
+
+    .main {
+        width: 90%; /* Sesuaikan lebar form */
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto; /* Buat tinggi dinamis */
+        padding: 20px; /* Kurangi padding */
+        border-radius: 8px; /* Tambahkan radius untuk tampilan modern */
+    }
+
+    h3 {
+        font-size: 24px; /* Perkecil ukuran heading */
+    }
+
+    p {
+        font-size: 14px; /* Perkecil ukuran font deskripsi */
+    }
+
+    label {
+        padding-left: 10px;
+        font-size: 14px; /* Perkecil ukuran label */
+    }
+
+
+    .mdi-eye-off {
+        left: 360px;
+        top: 260px;
+    }
+
+    input {
+        width: 98%; /* Sesuaikan input dengan lebar container */
+        margin-left: 0; /* Hapus margin kiri */
+        padding: 5px; /* Tambahkan padding */
+    }
+
+    button {
+        width: 100%; /* Sesuaikan tombol dengan lebar container */
+        margin-left: 0; /* Hapus margin kiri */
+        padding: 10px; /* Tambahkan padding */
+    }
+
+    .google-btn {
+        width: 100%; /* Sesuaikan tombol Google */
+    }
+
+    .forgot-password {
+        font-size: 14px; /* Perkecil ukuran font */
+        margin-right: 0; /* Hapus margin kanan */
+    }
+
+    .separator {
+        margin-top: 20px; /* Kurangi margin atas */
+    }
+}
