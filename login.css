@@ -286,7 +286,7 @@ button{
     background-color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navbar {
         justify-content: flex-start; 
         padding: 30px 50px; 
