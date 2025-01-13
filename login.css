@@ -43,10 +43,6 @@ body {
     opacity: 0px;
 }
 
-#chk{
-    display: none;
-}
-
 .login{
     position: relative;
     width: 100%;
@@ -125,7 +121,6 @@ input{
     margin-left: 25px;
     margin-bottom: 15px;
 } 
-
 .mdi-eye-off {
     position: absolute;
     right: 60px;
@@ -323,6 +318,7 @@ button{
 
 
     .mdi-eye-off {
+        display: absolute;
         left: 360px;
         top: 260px;
     }
