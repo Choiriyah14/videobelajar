@@ -281,7 +281,7 @@ button{
     background-color: #f0f0f0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         justify-content: flex-start; 
         padding: 25px 50px; 
@@ -294,13 +294,18 @@ button{
     }
 
     .main {
-        width: 90%; 
+        width: 360px; 
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        height: auto;
+        height: 620px;
         padding: 20px; 
         border-radius: 8px; 
+    }
+
+    .login{
+        width:320px;
+        height: 514px;
     }
 
     h3 {
@@ -319,7 +324,7 @@ button{
 
     .mdi-eye-off {
         display: absolute;
-        left: 360px;
+        left: 290px;
         top: 260px;
     }
 

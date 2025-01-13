@@ -164,7 +164,7 @@ input {
 
 .phone-input input {
     display: inline-block;
-    width: 428px;
+    width: 405px;
     height: 48px;
     gap: 0px;
     display: flex;
@@ -355,4 +355,36 @@ button {
 
 .google-btn:hover {
     background-color:#f0f0f0;
+}
+
+@media screen and (max-width: 600px;) {
+    
+    .navbar {
+    justify-content: flex-start; 
+    padding: 25px 50px; 
+    box-shadow: 0px 0px 1px 0px #3E434A4F;
+    box-shadow: 4px 8px 12px 0px #3E434A26;
+    }
+
+    .logo-videobelajar {
+    height: 30px; 
+    }
+
+    .main {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    input, .phone-input select, .password-container input, button, .google-btn {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    .phone-input {
+        margin-left: 20px;
+    }
+
+    .separator {
+        margin: 35px 20px 0 20px;
+    }
 }
