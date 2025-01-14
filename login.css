@@ -31,7 +31,7 @@ body {
 .main {
     margin: auto;
     margin-top: 100px;
-    width: 590px;
+    width: 570px;
     height: 617px;
     padding: 36px 0px 0px 0px;
     gap: 36px;
@@ -84,7 +84,7 @@ label{
     justify-content: left;
     display: flex;
     margin: 5px;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-bottom: 5px;
     font-style: medium;
     font-family: 'DM Sans';
@@ -123,7 +123,7 @@ input{
 } 
 .mdi-eye-off {
     position: absolute;
-    right: 60px;
+    right: 30px;
     top: 43%;
     transform: translateY(-50%);
     font-size: 24px;
@@ -145,7 +145,7 @@ input{
     text-decoration-skip-ink: none;
     text-decoration: none;
     margin-top: 15px;
-    margin-right: 40px;
+    margin-right: 20px;
     transition: .2s ease in;
     cursor: pointer;
 }
@@ -232,7 +232,7 @@ button{
   
   .separator:not(:empty)::before {
     margin-right: 5px;
-    margin-left: 20px;
+    margin-left: 26px;
     margin-top: 5px;
   }
   
