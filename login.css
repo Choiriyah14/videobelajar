@@ -282,6 +282,10 @@ button{
 }
 
 @media (max-width: 768px) {
+    .body{
+        width: 50%;
+    }
+
     .navbar {
         justify-content: flex-start; 
         padding: 25px 50px; 
@@ -294,12 +298,13 @@ button{
     }
 
     .main {
-        width: 350px; 
-        margin-top: 50px;
+        width: 320px; 
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        height: 580px;
-        padding: 10px; 
+        height: 490px;
+        padding: 0; 
+        padding-right: 40px;
         border-radius: 8px; 
     }
 
@@ -309,6 +314,8 @@ button{
     }
 
     h3 {
+        margin-top: 10px;
+        align-items: center;
         font-size: 24px; 
     }
 
@@ -324,29 +331,32 @@ button{
 
     .mdi-eye-off {
         display: absolute;
-        left: 290px;
-        top: 260px;
+        left: 275px;
+        top: 235px;
     }
 
     input {
-        width: 98%; 
-        margin-left: 0;
-        padding: 5px; 
+        width: 90%; 
+        margin-left: 10px;
+        padding: 5px;
+        height: 30px;
     }
 
     button {
-        width: 100%; 
-        margin-left: 0; 
+        width: 93%; 
+        height: 30px;
+        margin-left: 10px; 
         padding: 10px; 
     }
 
     .google-btn {
-        width: 100%; 
+        width: 93%; 
+        height: 30px;
     }
 
     .forgot-password {
         font-size: 14px; 
-        margin-right: 0; 
+        margin-right: 13px; 
     }
 
     .separator {
