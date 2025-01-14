@@ -294,12 +294,12 @@ button{
     }
 
     .main {
-        width: 360px; 
+        width: 350px; 
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         height: 580px;
-        padding: 20px; 
+        padding: 10px; 
         border-radius: 8px; 
     }
 
