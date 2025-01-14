@@ -52,7 +52,7 @@ body {
 
 h3 {
     font-family: 'poppins';
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 32px;
     line-height: 35.2px;
     color: #222325;
@@ -66,7 +66,7 @@ h3 {
 p {
     font-family: 'DM Sans';
     font-style: medium;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     color: #333333AD;;
     text-align: center;
@@ -163,19 +163,16 @@ input {
 }
 
 .phone-input input {
-    display: inline-block;
+    display: flex;
+    flex: 1;
     width: 405px;
     height: 48px;
-    gap: 0px;
-    display: flex;
     cursor: pointer;
     outline: none;
     border: 1px 0px 0px 0px;
     border-radius: 6px;
-    opacity: 0px;
+    opacity: 1;
     border: 1px solid #F1F1F1;
-    margin-left: 25px;
-    margin-bottom: 15px;
 }
 
 .password-container {
@@ -357,7 +354,7 @@ button {
     background-color:#f0f0f0;
 }
 
-@media screen and (max-width: 600px;) {
+@media screen and (max-width: 600px) {
     
     .navbar {
     justify-content: flex-start; 
@@ -371,20 +368,97 @@ button {
     }
 
     .main {
-        width: 90%;
-        margin-top: 50px;
+        width: 320px; 
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: 20px;
+        height: 900px;
+        padding: 0; 
+        padding-right: 40px;
+        border-radius: 8px; 
     }
 
-    input, .phone-input select, .password-container input, button, .google-btn {
-        width: calc(100% - 40px);
-        margin-left: 20px;
+    .login{
+        width:320px;
+        height: 514px;
     }
 
-    .phone-input {
-        margin-left: 20px;
+    h3 {
+        margin-left: 40px;
+        margin-top: 10px;
+        align-items: center;
+        font-size: 24px; 
+    }
+
+    p {
+        margin-left: 40px;
+        font-size: 14px; 
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%; 
+        padding: 5px;
+        height: 40px;
+    }
+
+    .phone-input{
+        width: 100%;
+    }
+
+    .phone-image{
+        width: 30px;
+        height: 38px;
+    }
+
+    .phone-image img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .phone-input select{
+        width: 50px;
+        height: 40px;
+    }
+
+    .phone-input input{
+        height: 40px;
+    }
+
+    .password-container input{
+        width: 50%; 
+        height: 40px;
+    }
+
+    .mdi-eye-off {
+        display: absolute;
+        left: 275px;
+        top: 235px;
+    }
+
+    button {
+        width: 100%; 
+        height: 40px;
+        margin-left: 25px; 
+        padding: 10px; 
+    }
+
+    .google-btn {
+        width: 100%; 
+        height: 40px;
+    }
+
+    .forgot-password {
+        font-size: 14px; 
+        margin-right: 5px; 
     }
 
     .separator {
-        margin: 35px 20px 0 20px;
+        margin-left: 50px;
+        margin-top: 20px;
     }
+
 }
