@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;    
     height: auto;
     padding: 0px 0px 64px 0px;
@@ -370,7 +372,7 @@ button {
     .main {
         width: 320px; 
         margin-top:50px;
-        margin-left: 55px;
+        margin-left: 50px;
         height: 830px;
         padding: 0; 
         padding-right: 40px;
