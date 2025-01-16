@@ -30,9 +30,10 @@ body {
 
 .main {
     margin: auto;
-    margin-top: 100px;
-    width: 600px;
-    height: 980px;
+    margin-top: 50px;
+    align-items: center;
+    width: 500px;
+    height: 850px;
     padding: 36px 0px 0px 0px;
     gap: 36px;
     background: white;
@@ -111,8 +112,8 @@ label {
 
 input {
     display: inline-block;
-    width: 554px;
-    height: 48px;
+    width: 453px;
+    height: 45px;
     gap: 0px;
     display: flex;
     cursor: pointer;
@@ -134,11 +135,11 @@ input {
 
 
 .phone-image {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 44px;
+    height: 43px;
     border: 1px solid #ddd;
     border-radius: 6px 0px 0px 6px;
     background-color: #f9f9f9;
@@ -150,13 +151,15 @@ input {
 }
 
 .phone-image img{
+    padding-top: 12px;
     width: 30px;
     height: 20px;
 }
 
 .phone-input select {
+    display: inline-block;
     width: 70px;
-    height: 46px;
+    height: 45px;
     border: 1px solid #F1F1F1;
     border-radius: 0px 6px 6px 0px;
     outline: none;
@@ -165,10 +168,9 @@ input {
 }
 
 .phone-input input {
-    position:block;
-    display: flex;
-    width: 405px;
-    height: 48px;
+    display: inline-block;
+    width: 305px;
+    height: 45px;
     cursor: pointer;
     outline: none;
     border: 1px 0px 0px 0px;
@@ -181,14 +183,13 @@ input {
     position: relative;
     display: flex;
     align-items: center;
-    width: 575px;
     margin-left: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .password-container input {
-    display: flex;
-    height: 48px;
+    width: 450px;
+    height: 45px;
     padding-right: 40px; 
     border: 1px solid #F1F1F1;
     border-radius: 6px;
@@ -196,8 +197,8 @@ input {
 
 .password-container i {
     position: absolute;
-    top: 14px;
-    right: 19px;
+    top: 10px;
+    left: 445px;
     cursor: pointer;
     color: #888;
     transition: color 0.3s;
@@ -220,7 +221,8 @@ input {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     text-decoration: none;
-    margin: 10px 20px 10px 20px;
+    margin-right: 25px;
+    margin-top: 5px;
     transition: .2s ease in;
     cursor: pointer;
 }
@@ -231,8 +233,8 @@ input {
 
 button {
     position: relative;
-    width: 550px;
-    height: 42px;
+    width: 450px;
+    height: 45px;
     padding: 10px;
     margin : 6px 0;
     margin-left: 25px;
@@ -292,9 +294,8 @@ button {
     font-family: 'DM Sans';
     font-size: 16px;
     font-weight: 400;
-    margin-top: 35px;
+    margin-top: 30px;
     color: #4A505C;
-
   }
   
   .separator::before,
@@ -306,7 +307,7 @@ button {
   
   .separator:not(:empty)::before {
     margin-right: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 5px;
   }
   
@@ -326,8 +327,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 520px;
-    height: 42px;
+    width: 450px;
+    height: 45px;
     gap: 8px; 
     padding: 10px 15px; 
     background-color: #ffff; 
@@ -347,8 +348,7 @@ button {
 }
 
 .google-logo {
-    width: 30px;
-    height: 20px; 
+    width: 30px; 
     height: auto; 
 }
 
@@ -359,21 +359,21 @@ button {
 @media screen and (max-width: 768px) {
     
     .navbar {
-    justify-content: flex-start; 
-    padding: 25px 50px; 
-    box-shadow: 0px 0px 1px 0px #3E434A4F;
-    box-shadow: 4px 8px 12px 0px #3E434A26;
+        justify-content: flex-start; 
+        padding: 25px 50px; 
+        box-shadow: 0px 0px 1px 0px #3E434A4F;
+        box-shadow: 4px 8px 12px 0px #3E434A26;
     }
 
     .logo-videobelajar {
-    height: 30px; 
+        height: 30px; 
     }
 
     .main {
         width: 320px; 
-        margin-top:50px;
-        margin-left: 50px;
-        height: 830px;
+        margin-top: 25px;
+        margin-left: 65px;
+        height: 820px;
         padding: 0; 
         padding-right: 40px;
         border-radius: 8px; 
@@ -385,14 +385,14 @@ button {
     }
 
     h3 {
-        margin-left: 40px;
+        margin-left: 50px;
         margin-top: 10px;
         align-items: center;
         font-size: 24px; 
     }
 
     p {
-        margin-left: 40px;
+        margin-left: 50px;
         font-size: 14px; 
     }
 
@@ -407,7 +407,7 @@ button {
     }
 
     .phone-input{
-        width: 100%;
+        width: 344px;
     }
 
     .phone-image{
@@ -430,37 +430,51 @@ button {
         height: 40px;
     }
 
+    .password-container{
+        width: 343px;
+    }
+
     .password-container input{
-        width: 55%; 
+        width: 400px; 
         height: 40px;
     }
 
-    .mdi-eye-off {
+    .password-container i {
         position: absolute;
-        left: 315px;
-        top: 240px;
+        right: 40px;
+        top: 50px;
     }
 
     button {
         width: 100%; 
-        height: 40px;
+        height: 35px;
         margin-left: 25px; 
         padding: 10px; 
     }
 
     .google-btn {
         width: 100%; 
-        height: 40px;
+        height: 35px;
     }
 
     .forgot-password {
         font-size: 14px; 
+        margin:0;
         margin-right: 5px; 
     }
 
-    .separator {
-        margin-left: 50px;
-        margin-top: 20px;
+    .separator{
+        width: 340px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separator:not(:empty)::before,
+    .separator:not(:empty)::after {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
