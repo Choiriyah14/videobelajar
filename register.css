@@ -427,7 +427,7 @@ button {
     }
 
     .password-container{
-        width: 300px;
+        width: 93%;
     }
 
     .password-container input{
@@ -436,7 +436,7 @@ button {
 
     .password-container i {
         position: absolute;
-        left: 400px;
+        left: 90%;
     }
 
     button {
