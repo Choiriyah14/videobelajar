@@ -56,7 +56,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    top: 280px;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url('frame-1.jpeg'); 
@@ -124,9 +124,9 @@ body {
 /* Course Section */
 .course-section {
     padding: 40px 20px;
-    max-width: 1200px;
-    margin-top: 80px;
-    margin-left: 50px;
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .course-header {
@@ -548,107 +548,256 @@ body {
     color: #333333;
 }
 
-@media (max-width: 1024px) {
-    .hero-section {
-        width: 100%;
-        height: 300px;
-    }
-
-    .hero-title {
-        font-size: 36px;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .course-section {
-        padding: 20px 10px;
-    }
-
-    .course-title {
-        font-size: 28px;
-    }
-
-    .tab {
-        font-size: 14px;
-    }
-
-    .cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
-
 @media (max-width: 768px) {
+    .body{
+        margin: auto;
+        padding: auto;
+    }
+
     .navbar {
+        width: 100%;
+        height: 50%;
+        padding-bottom: 5px;
+    }
+
+    .navbar-right{
+        margin-right: 50px;
+    }
+
+    .kategori-text{
+        font-size: 14px;
+    }
+
+    .profile-image{
+        overflow: hidden;
+        width: 40%;
+    }
+
+    .hero-section{
+        display: inline-block;
+        align-items: left;
+        justify-content: left;
+        width: 330px;
+        height: 440px;
+        top: 215px;
+        left: 185px;
+    }
+
+    .hero-overlay{
+        color: #0000 80%;
+    }
+
+    .hero-title{
+        width: 250px;
+        height: 130px;
+        gap: 0px;
+        opacity: 0px;        
+        font-size: 24px;
+        text-align: center; 
+        margin-top: 20px;
+        margin-left: 20px;    
+    }
+
+    .hero-description{
+        width: 280px;
+        height: 120px;
+        gap: 0px;
+        opacity: 0px;        
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;  
+        margin-top: 55px;    
+    }
+
+    .cta-button{
+        display: inline-block;
+        border-radius: 10px;
+        opacity: 0px;   
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        padding: 10px 5px;
+        text-align: left;  
+    }
+
+    .course-section{
+        padding: 2px 10px;
+        width: 320px;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+
+    .course-header{
+        text-align: left;       
+    }
+    
+    .course-title{
+        width: 320px;
+        height: 52px;
+        gap: 0px;
+        opacity: 0px;
+        angle: -0 deg;        
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .course-subtitle{
+        width: 320px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;       
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.6px;
+        letter-spacing: 0.50000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;        
+    }
+
+    .course-tabs{
+        width: 50px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;        
+    }
+
+    .tab{
+        width: 111px;
+        height: 44px;
+        padding: 12px 36px 12px 0px;
+        gap: 6px;
+        opacity: 0px;        
+    }
+
+    .cards-container{
+        display: flex; 
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: flex-start; 
+        width: 320px;
+        height: 1483px;
+        gap: 20px;
+        opacity: 0px; 
+        margin-top: 50px;
+        margin-right: 50px;       
     }
 
-    .navbar-right {
-        gap: 15px;
+    .card{
+        width: 305px;
+        height: 150px;
+        padding: 8px;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px;
+        opacity: 0px;
+        margin: auto;        
     }
 
-    .hero-section {
-        height: 250px;
+    .card-image img{
+        width: 82px;
+        height: 82px;
+        gap: 0px;
+        border-radius: 10px;
+        opacity: 0px;  
+        margin-top: 5px;      
     }
 
-    .hero-title {
-        font-size: 28px;
+    .card-title{
+        width: 194px;
+        height: 38px;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;             
     }
 
-    .cta-button {
-        padding: 8px 16px;
-        font-size: 12px;
+   .card-profile{
+        width: 194px;
+        height: 37px;
+        gap: 8px;
+        opacity: 0px;
     }
 
-    .course-title {
-        font-size: 24px;
+   .banner-section{
+        width: 320px;
+        height: 450px;
+        gap: 0px;
+        border-radius: 4px;
+        opacity: 0px;
+        margin-right: 100px;
+        box-shadow: 0px 12px 45px -10px #003BDE33;
     }
 
-    .tab {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 10px 20px;
+    .banner-content{
+        width: 350px;
+        height: 350px;
     }
 
-    .profile-image {
-        width: 30px;
-        height: 30px;
-    }
+   .banner-description-1 {
+        height: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 10px;
+   }
 
-    .hero-section {
-        height: 200px;
-    }
+   .banner-title{
+        margin-top: 10px;
+   }
 
-    .hero-title {
-        font-size: 24px;
-    }
+   .banner-description{
+        width: 280px;
+        height: 80px;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-left: 15px;
+   }
 
-    .cta-button {
-        padding: 6px 12px;
-        font-size: 10px;
-    }
+   .outer-button{
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        padding: 10px 5px 10px 5px;
+        background-color: white;
+        color: #333333AD;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: 'DM Sans';
+        text-align: left;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer !important;
+   }
 
-    .course-title {
-        font-size: 20px;
-    }
-
-    .tab {
-        font-size: 10px;
-    }
-
-    .card {
-        width: 95%;
-    }
+   .inner-button{
+        top: 100%; 
+        padding: 20px 110px;
+        background-color: #ffbd3a;
+        color: white;
+        font-size: 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left:150px;
+   }
 }
