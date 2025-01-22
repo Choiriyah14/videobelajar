@@ -13,44 +13,66 @@ body {
     box-sizing: border-box;
 }
 
-.navbar {
+.fContainer{
+    display: flex;
+    width: 100%;
+    height:80px;
+    border-bottom: 1px solid #3A35411F;
+}
+
+.wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px 40px; 
-    background-color: white; 
-    border-bottom: 1px solid #E0E0E0; 
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.navbar-left {
-    flex: 1;
-}
-
-.logo-videobelajar {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-right {
-    display: flex;
     align-items: center;
-    gap: 30px; 
+    width: 100%;
+    height: 80px;
+    background-color: white;
 }
 
-.kategori-text {
-    font-family: 'DM Sans';
+.brand{
+   padding: 0px 80px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #000000;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    line-height: 80px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a{
+    color: #333333AD;
     font-size: 16px;
-    color: #888; 
+    font-weight: 500;
+    font-family: 'DM Sans';
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22.4px;
 }
 
-.profile-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 20%;
-    object-fit: cover; 
-    border: 1px solid #E0E0E0; 
+.navigation > li > img{
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
 }
 
 /* Hero Section */
@@ -85,7 +107,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    width: 800px;
     padding: 20px;
 }
 
@@ -126,7 +148,7 @@ body {
     padding: 40px 20px;
     width: 1200px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .course-header {
@@ -434,7 +456,6 @@ body {
     flex-wrap: wrap; 
     box-sizing: border-box; 
     border-top: 1px solid #E0E0E0; 
-    margin-top: 50px; 
 }
 
 
@@ -500,9 +521,9 @@ body {
 .horizontal-line {
     justify-content: center;
     align-items: center;
-    border: none; /* Tidak ada border */
-    border-top: 2px solid #ddd; /* Garis di bagian atas */
-    width: 100%; /* Panjang garis 100% dari kontainer */
+    border: none; 
+    border-top: 2px solid #ddd; 
+    width: 100%; 
     margin-top: 80px;
     margin-bottom: -10px;
 }
@@ -549,38 +570,18 @@ body {
 }
 
 @media (max-width: 768px) {
-    .body{
-        margin: auto;
-        padding: auto;
-    }
 
-    .navbar {
-        width: 100%;
-        height: 50%;
-        padding-bottom: 5px;
-    }
-
-    .navbar-right{
-        margin-right: 50px;
-    }
-
-    .kategori-text{
-        font-size: 14px;
-    }
-
-    .profile-image{
-        overflow: hidden;
-        width: 40%;
+    .brand{
+        padding-left: 25px;
     }
 
     .hero-section{
         display: inline-block;
-        align-items: left;
-        justify-content: left;
-        width: 330px;
+        align-items: center;
+        width: 320px;
         height: 440px;
-        top: 215px;
-        left: 185px;
+        top: 210px;
+        left: 180px;
     }
 
     .hero-overlay{
@@ -594,8 +595,8 @@ body {
         opacity: 0px;        
         font-size: 24px;
         text-align: center; 
-        margin-top: 20px;
-        margin-left: 20px;    
+        margin-top: 20px; 
+        margin-left: 20px;
     }
 
     .hero-description{
@@ -606,7 +607,7 @@ body {
         font-size: 14px;
         font-weight: 500;
         text-align: center;  
-        margin-top: 55px;    
+        margin-top: 55px;  
     }
 
     .cta-button{
@@ -617,7 +618,8 @@ body {
         font-weight: 400;
         line-height: 15px;
         padding: 10px 5px;
-        text-align: left;  
+        text-align: left;
+        margin-right: 520px;  
     }
 
     .course-section{
@@ -687,8 +689,8 @@ body {
     }
 
     .card{
-        width: 305px;
-        height: 150px;
+        width: 300px;
+        height: 130px;
         padding: 8px;
         gap: 8px;
         border-radius: 10px;
@@ -727,13 +729,14 @@ body {
     }
 
    .banner-section{
-        width: 320px;
+        width: 370px;
         height: 450px;
         gap: 0px;
         border-radius: 4px;
         opacity: 0px;
         margin-right: 100px;
         box-shadow: 0px 12px 45px -10px #003BDE33;
+        margin-top: 30px;
     }
 
     .banner-content{
@@ -800,4 +803,9 @@ body {
         cursor: pointer;
         margin-left:150px;
    }
+
+   .footer{
+        margin-top: 2px;
+   }
 }
+
