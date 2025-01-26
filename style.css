@@ -1,0 +1,1197 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;    
+    height: auto;
+    margin: 0;
+    background-color: #FFFDF3; 
+    font-family: 'Poppins', 'DM Sans';
+    overflow: visible; 
+    box-sizing: border-box;
+}
+
+.fContainer{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #3A35411F;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.brand{
+   padding: 0px 80px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a{
+    display: inline-block;
+    color: #333333AD;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'DM Sans';
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+
+.navigation > li > img{
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+}
+
+.fa-bars:before {
+    display:none;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('frame-1.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    width: 800px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-family: 'poppins';
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.hero-description {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'DM Sans';
+    color: white;
+    background-color: #00c853;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #009624;
+}
+
+/* Course Section */
+.course-section {
+    padding: 40px 20px;
+    width: 1200px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.course-header {
+    text-align: left;
+    margin: auto;
+}
+
+.course-title {
+    width: 623px;
+    height: 35px;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: 'poppins';
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.course-subtitle {
+    width: 372px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    margin-top: 20px;
+}
+
+.course-title, .course-subtitle, .card-title {
+    opacity: 1; 
+}
+
+/* Tabs */
+.course-tabs {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tab {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 16px;
+    color: #777;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab:hover, .tab.active {
+    color: #f64920;
+    border-bottom: 2px solid #f64920;
+}
+
+
+.cards-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*card pertama*/
+.card {
+    display: flex;
+    width: 384px;
+    height: 426px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Image Section */
+.card-image img {
+    width: 344px;
+    height: 193px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;    
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Content Section */
+.card-content {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.card-title,
+.card-description {
+    margin: 0; /* Hindari margin berlebih */
+}
+
+.card-title {
+    width: 344px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 10px; 
+    margin-left:5px;   
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: #222325;
+    text-align: left;
+    line-height: 21.6px;
+}
+
+.card-description {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    font-size: 16px;
+    color: #8f8c8c;
+    text-align: left;
+    margin-top: 10px;
+    margin-left:5px;
+}
+
+/* Profile Section */
+.card-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left:5px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-profile .profile-name {
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 600;
+    color: #222325;
+    text-align: left;
+}
+
+.card-profile .profile-job {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333AD;
+    margin: 0;
+}
+
+.job-di{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333AD;
+}
+
+.company-name {
+    color: #333333AD; 
+    font-weight: 700; 
+}
+
+/* Footer Section */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    top: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 18px;
+    margin-top: 20px;
+    margin-right: 80px;
+    gap: 0px;
+}
+
+.rating .star {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.rating span {
+    width: 53px;
+    height: 30px;
+    margin-left: 15px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(51, 51, 51, 0.68);
+
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.price {
+    width: 99px;
+    height: 29px;
+    margin-top: 15px;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: 'poppins';
+    font-size: 24px;
+    font-weight: 900;
+    color: #3ecf4c;
+}
+
+/* Banner Section */
+.banner-section {
+    position: relative;
+    background-image: url('banner-logo.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Banner Text Styling */
+.banner-description-1 {  
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    color: #c1c2c4;
+}
+
+.banner-title {    
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #ffff;
+    text-align: center;
+}
+
+.banner-description {
+    display: flex;
+    width: 525px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4f5fa;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.banner-form {
+    height: 60px;
+    display: flex;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    padding: 8px 8px 8px 32px;
+    border-radius: 10px;
+    border: none;
+    margin: 50px 0;
+}
+
+.email-input{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    text-align: left;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-style: none;
+}
+
+.banner-form:hover {
+    background-color: #f5f5f5;
+}
+
+.subscribe-button {
+    position: absolute;
+    margin-left: 370px;
+    padding: 10px 20px;
+    background-color: #ffbd3a;
+    color: white;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #e0a62e;
+}
+
+.footer {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+    background-color: white; 
+    padding: 20px 20px 20px 40px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    box-sizing: border-box; 
+    border-top: 1px solid #E0E0E0; 
+}
+
+
+.logo-videobelajar {
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.footer .logo span {
+    color: red;
+}
+
+.title{
+    width: 352px;
+    height: 50px;
+    gap: 0px;
+    margin-top: 20px;
+    opacity: 0px;    
+    font-family: 'DM Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.address{
+    margin-top: 20px;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.phone{
+    margin-top: 20px;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.navbar-right .categories,
+.navbar-right .company,
+.navbar-right .community {
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.navbar-right .h4 {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 16px;
+    color: #222325;
+}
+
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-right  ul li {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navbar-right  ul li a {
+    padding: 0;
+    text-decoration: none;
+    color: #333333;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar-right  ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.arrow-image{
+    display: none;
+}
+
+.horizontal-line {
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    border-top: 2px solid #ddd; 
+    width: 95%; 
+    margin-top: 80px;
+    margin-bottom: -10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social {
+    display: flex;
+    gap: 0px;
+    margin-top: 5px;
+    justify-content: flex-end; 
+    margin-right: -290%;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    border-color: #000;
+    color: #000;
+}
+
+.footer-bottom .copyright {
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .fContainer{
+        width: 100%;
+        height: 74px;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+    }
+
+    .brand{
+        padding-left: 25px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .hero-section{
+        display: inline-block;
+        align-items: center;
+        width: 320px;
+        height: 440px;
+        top: 250px;
+        left: 180px;
+    }
+
+    .hero-overlay{
+        color: #0000 80%;
+    }
+
+    .hero-title{
+        width: 250px;
+        height: 130px;
+        gap: 0px;
+        opacity: 0px;        
+        font-size: 24px;
+        text-align: center; 
+        margin-top: 20px; 
+        margin-left: 20px;
+    }
+
+    .hero-description{
+        width: 280px;
+        height: 120px;
+        gap: 0px;
+        opacity: 0px;        
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;  
+        margin-top: 55px;  
+    }
+
+    .cta-button{
+        display: inline-block;
+        border-radius: 10px;
+        opacity: 0px;   
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+        padding: 10px 5px;
+        text-align: left;
+        margin-right: 470px;  
+    }
+
+    .course-section{
+        padding: 2px 10px;
+        width: 320px;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+
+    .course-header{
+        text-align: left;       
+    }
+    
+    .course-title{
+        width: 320px;
+        height: 52px;
+        gap: 0px;
+        margin-top: 50px;
+        opacity: 0px;
+        angle: -0 deg;        
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26.4px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .course-subtitle{
+        width: 320px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;       
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.6px;
+        letter-spacing: 0.50000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;        
+    }
+
+    .course-tabs{
+        display: flex;
+        width: 50px;
+        height: 40px;
+        gap: 15px;
+        opacity: 0px; 
+        font-family: 'DM Sans' sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;         
+    }
+
+    .tab{
+        align-content: baseline;
+        width: 111px;
+        height: 44px;
+        padding: 5px 16px;
+        gap: 10px;
+        opacity: 0px;    
+        border-bottom: 2px solid transparent;    
+    }
+
+    .cards-container {
+        width: 100vw;
+    }
+    
+    .card {
+        display: flex; 
+        flex-direction: row; 
+        width: 350px;
+        height: 150px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-image{
+        width: 82px;
+        height: 82px;
+        margin-right: 10px;
+      }
+
+    .card-image img{
+        width: 82px;
+        height: 82px;
+        margin-top: -18px;
+        margin-left: 20px;
+        object-fit: cover;
+      }
+    
+    .card-title {
+        width: 195px;
+        font-size: 16px;
+        margin-top: -40px;
+      }
+
+    .card-description{
+        display: none;
+    }
+
+    .job-di{
+        display:none;
+    }
+
+    .company-name{
+        display: none;
+    }
+    
+
+   .banner-section{
+        width: 320px;
+        height: 450px;
+        gap: 0px;
+        margin-bottom: 60px;
+        margin-right: 100px;
+        border-radius: 4px;
+        opacity: 0px;
+        box-shadow: 0px 12px 45px -10px #003BDE33;
+        
+    }
+
+    .banner-content{
+        width: 400px;
+        height: 350px;
+    }
+
+   .banner-description-1 {
+        height: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-top: 10px;
+   }
+
+   .banner-title{
+        margin-top: 10px;
+   }
+
+   .banner-description{
+        width: 280px;
+        height: 90px;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-left: 15px;
+   }
+
+   .banner-form{
+        width: 270px;
+        height: 40px;
+        padding: 1px 8px 5px 15px;
+        margin-left: 20px;
+        margin-top: 0px;
+        gap: 0px;
+        border-radius: 10px;
+        justify-content: space-between;
+        opacity: 0px;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .email-input{
+        display: flex;
+        margin-left: 5px;
+        margin-top: 10px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        border-style:none;
+   }
+
+   .subscribe-button{
+        width: 270px;
+        height: 40px;
+        padding: 10px 8px 10px 12px;
+        margin-right: 375px;
+        margin-top: 50px;
+        gap: 0px;
+        border-radius: 10px;
+        justify-content: space-between;
+        opacity: 0px;
+        align-items: center;
+        text-align: center;
+   }
+}
+
+@media (max-width: 480px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-image{
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .profile-name, .profile-job{
+        margin-top: 10px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+      }
+    
+    .card {
+        width: 320px;
+        margin-right: 100px;
+      }
+
+    .card-image{
+        width: 82px;
+        height: 82px;
+        margin-right: 10px;
+      }
+
+    .card-image img{
+        width: 82px;
+        height: 82px;
+        margin-top: -20px;
+        margin-left: 20px;
+        object-fit: cover;
+      }
+    
+    .card-title {
+        width: 195px;
+        font-size: 16px;
+      }
+
+    .card-description{
+        display: none;
+    }
+
+    .job-di{
+        display:none;
+    }
+
+    .company-name{
+        display: none;
+    }
+
+    .card-footer{
+        margin-bottom: -85px;
+        margin-left: -320px;
+    }
+
+    .rating{
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        height: 18px;
+        margin-top: 20px;
+        margin-right: -0px;
+        gap: 0px;
+    }
+    
+    .price {
+        font-size: 20px;
+        width: 143px;
+        height: 18px;
+        gap: 8px;
+        opacity: 0px;        
+      }
+    }
+
+    .footer{
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        padding:0;
+        height:auto;
+    }
+
+    .navbar-left{
+        padding: 0;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .navbar-left .logo-videobelajar{
+        padding: 0;
+        margin:0;
+    }
+
+    .title{
+        width: 320px;
+        height: 40px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none; 
+        color: rgba(34, 35, 37, 1);     
+    }
+
+    .address{
+        width: 320px;
+        height: 20px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .phone{
+        width: 320px;
+        height: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;        
+    }
+
+    .navbar-right{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-right .categories,
+    .navbar-right .company,
+    .navbar-right .community {
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+    .navbar-right .h4{       
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .arrow-image{
+        width: 100%;
+        clear: both;
+        display: flex;
+        justify-content: space-between;
+        float: left;
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .arrow-image img{
+        display: flex;
+        padding-left: 200px;
+    }
+
+    .navbar-right  ul li a{
+        display: none;
+    }
+
+    .horizontal-line{
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 1px;
+        border: 1px 0px 0px 0px; 
+        margin-top: 20px; 
+        margin-bottom: 10px;  
+        margin-left: 20px;    
+    }
+
+    .footer-bottom{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .social{
+        display: flex;
+        padding-left: 10px;
+        margin-right: 200px;
+    }
+
+    .social-icon{
+        display: flex;
+        width: 35px;
+        height: 35px;
+        gap: 0px;
+        opacity: 0px;
+        border-width: 0px, 0px, 0px, 0px;
+        border-style: solid;                
+    }
+
+    .footer-bottom .copyright{
+        display: flex;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+        font-family: 'DM Sans';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.4px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 320px;
+        height: 44px;
+        gap: 0px;
+        opacity: 0px;        
+    }
+
+
+}
